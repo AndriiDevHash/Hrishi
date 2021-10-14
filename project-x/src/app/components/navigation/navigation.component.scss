@@ -1,0 +1,27 @@
+@import '../../styles//variables.styles.scss';
+
+:host,
+.container,
+.navigation-menu {
+  height: 100%;
+}
+
+.navigation-menu {
+  display: flex;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+
+  &__item {
+    padding: 0 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &--active {
+      color: $light-blue;
+      border-bottom: 2px solid $dark-blue;
+    }
+  }
+}

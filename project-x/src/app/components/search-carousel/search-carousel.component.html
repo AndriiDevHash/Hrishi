@@ -1,0 +1,28 @@
+
+<div class="title">Users also searched for:</div>
+<div class="search-container">
+  <div class="company-card-container">
+    <div *ngFor="let company of companies">
+      <div>
+        <div class="company-card">
+          <span class="company-card__item company-card__label" [ngStyle]="{ 'background': company.color }">{{ company.label }}</span>
+          <span class="company-card__item company-card__name">{{ company.longName }}</span>
+          <span class="company-card__item company-card__amount">${{ company.amount | number }}</span>
+          <div class="company-card__item company-card__footer">
+            <app-rate-info [rate]="company.rate" [rateType]="company.rateType"></app-rate-info>
+            <button class="company-card__button">+</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <button class="control control--prev">
+    <svg class="control__icon"xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    </svg>
+  </button>
+  <button class="control control--next">
+    <svg class="control__icon"xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+    </svg>
+  </button>
+</div>

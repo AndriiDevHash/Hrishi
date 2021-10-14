@@ -1,0 +1,33 @@
+@import '../../styles/variables.styles.scss';
+
+.user-profile {
+  display: flex;
+  align-items: center;
+
+  &__avatar {
+    width: 45px;
+    height: 45px;
+
+  }
+
+  &__img {
+    height: auto;
+    width: 100%;
+  }
+
+  &__info {
+    margin-left: 10px;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__role {
+    font-style: italic;
+  }
+
+  &__chevron {
+    margin-left: 10px;
+  }
+}

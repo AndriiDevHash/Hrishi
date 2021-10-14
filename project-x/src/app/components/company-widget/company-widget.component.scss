@@ -1,0 +1,65 @@
+@import '../../styles/variables.styles.scss';
+
+.widget {
+  background: #fff;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 10px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+  }
+}
+
+.main-info {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nasdaq {
+  margin-right: 20px;
+}
+
+.wrapper {
+  padding: 45px 25px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.data-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  &__item:nth-child(odd) {
+    background: #edf8fe;
+    border-radius: 3px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 7px;
+    border-radius: 10px;
+  }
+}
+
+.button {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  background: $dark-blue;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 600;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.break {
+  margin: 0;
+}

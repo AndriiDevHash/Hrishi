@@ -1,0 +1,79 @@
+<div class="widget border border-1 shadow-sm">
+  <h1 class="widget__title">{{ company.name }}</h1>
+
+  <div class="main-info">
+    <div>
+      <div>
+        <span class="nasdaq">NASDAQ : AAPL</span>
+        <span>NYSE : AAPL</span>
+      </div>
+
+      <div class="wrapper border border-1">
+        <div class="data-table">
+          <div>
+            <div class="data-table__item">
+              <span>Market Cap</span>
+              <span>$ {{ company.marketCap }} T</span>
+            </div>
+            <div class="data-table__item">
+              <span>Stock P/E</span>
+              <span>{{ company.stock }}</span>
+            </div>
+            <div class="data-table__item">
+              <span>ROE</span>
+              <span>{{ company.roe }}%</span>
+            </div>
+            <div class="data-table__item">
+              <span>Sales, PAT 3Y</span>
+              <span>{{ company.sales }}%</span>
+            </div>
+            <div class="data-table__item">
+              <span>Face value</span>
+              <span>$ {{ company.faceValue }}</span>
+            </div>
+            <div class="data-table__item">
+              <span>Traded vakue 1D/1M</span>
+              <span>$ {{ company.tradeValueDay }} / $ {{ company.tradeValueMonth }}B</span>
+            </div>
+          </div>
+          <div>
+            <div class="data-table__item">
+              <span>Opening Price</span>
+              <span>$ {{ company.openingPrice }}</span>
+            </div>
+            <div class="data-table__item">
+              <span>H/L 1 year</span>
+              <span>$ {{ company.h }} / $ {{ company.l }}</span>
+            </div>
+            <div class="data-table__item">
+              <span>ROCE</span>
+              <span>{{ company.roce }}%</span>
+            </div>
+            <div class="data-table__item">
+              <span>H/L Short (1Y)</span>
+              <span>{{ company.hShort }}% / {{ company.lShort }} %</span>
+            </div>
+            <div class="data-table__item">
+              <span>Book Value</span>
+              <span>$ {{ company.bookValue }}</span>
+            </div>
+            <div class="data-table__item">
+              <span>Current Short ( % of ff )</span>
+              <span>{{ company.currentShort }} %</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="button">+ Add ratio</button>
+
+        <hr class="break">
+
+        <app-search-carousel></app-search-carousel>
+      </div>
+    </div>
+
+    <div>
+      <app-chart [company]="company"></app-chart>
+    </div>
+  </div>
+</div>

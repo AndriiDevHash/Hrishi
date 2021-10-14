@@ -1,0 +1,29 @@
+@import '../../styles/variables.styles.scss';
+
+.rate {
+  width: fit-content;
+  padding: 0 5px;
+  border-radius: 3px;
+
+  &--increase {
+    color: $green;
+    background: $light-green;
+
+    .rate__icon {
+      transform: rotate(180deg);
+      fill: $green;
+      color: $green;
+    }
+  }
+
+  &--decrease {
+    color: $red;
+    background: $light-red;
+
+    .rate__icon {
+      transform: rotate(0deg);
+      fill: $red;
+      color: $red;
+    }
+  }
+}

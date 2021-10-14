@@ -1,0 +1,98 @@
+@import '../../styles/variables.styles.scss';
+
+:host {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border: 1px solid $gray;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 0;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.title {
+  display: flex;
+  gap: 20px;
+
+  &__txt {
+    width: 75px;
+  }
+
+  &__icon {
+    width: 12px;
+    height: 12px;
+    fill: $light-blue;
+    stroke: $light-blue;
+    stroke-width: 1;
+  }
+
+  &__icon-wraper {
+    padding: 3px;
+    border: 1px solid $gray;
+    margin-left: 20px;
+  }
+}
+
+.search-container {
+  position: relative;
+}
+
+.company-card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  overflow: hidden;
+  max-width: 780px;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  box-shadow: 2px 4px 4px 0px rgb(34 60 80 / 20%);
+  border: 1px solid $gray;
+  border-radius: 50%;
+  background: #fff;
+  padding: 0;
+
+  &--prev {
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    .control__icon {
+      transform: rotate(90deg);
+    }
+  }
+
+  &--next {
+    right: 0;
+    transform: translate(50%, -50%);
+
+    .control__icon {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__icon {
+    color: $dark-blue;
+    fill: $dark-blue;
+  }
+}
+
+.company-card {
+  padding: 5px;
+  border-radius: 15px;
+  border: 2px solid $gray;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+
+  &__name {
+    border-right: 1px solid $gray;
+    padding-right: 5px;
+    margin-right: 5px;
+  }
+}

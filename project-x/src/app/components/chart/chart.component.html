@@ -1,0 +1,39 @@
+<div class="chart-title">
+  <span class="chart-title__amount">${{ company.amount }}</span>
+  <span class="chart-title__rate">
+    <app-rate-info
+      [rate]="company.rate"
+      [rateType]="company.rateType"
+      [rateStyle]="rateStyle"
+    >
+    </app-rate-info>
+  </span>
+  <span [ngClass]="rateDescriptionClasses">
+    {{ rateDescription }}
+  </span>
+</div>
+
+<div class="filters">
+  <div class="ranges-filter">
+    <div *ngFor="let filter of rangesFilter">
+      <div [ngClass]="{'filters__item': true, 'filters__item--selected': filter.selected}">{{ filter.value }}</div>
+    </div>
+  </div>
+  <div class="prices-filter">
+    <div *ngFor="let filter of pricesFilter">
+      <div [ngClass]="{'filters__item': true, 'filters__item--selected': filter.selected}">{{ filter.value }}</div>
+    </div>
+  </div>
+</div>
+
+<div echarts [options]="chartOptions" theme="macarons" class="chart"></div>
+
+<div class="legend">
+  <div *ngFor="let item of bottomLegends">
+    <div [ngClass]="{'legend__item': true, 'legend__item--selected': item.selected}">
+      {{ item.value }}
+    </div>
+  </div>
+</div>
+
+<app-company-comperation-carousel></app-company-comperation-carousel>

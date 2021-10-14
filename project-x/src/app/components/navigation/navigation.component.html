@@ -1,0 +1,11 @@
+<nav class="container">
+  <ul class="navigation-menu m-0 p-0">
+    <li
+      *ngFor="let item of navigationList"
+      [ngClass]="getNavigationItemClass(item)"
+      (click)="onNavigationItemClick(item)"
+    >
+      <span>{{ item.name }}</span>
+    </li>
+  </ul>
+</nav>

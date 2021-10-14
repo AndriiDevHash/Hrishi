@@ -1,0 +1,66 @@
+@import '../../styles/variables.styles.scss';
+
+.chart-title {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &__amount {
+    font-size: 36px;
+  }
+
+  &__rate-description {
+    &--increase {
+      color: $green;
+    }
+
+    &--decrease {
+      color: $red;
+    }
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    &--selected {
+      border-radius: 15px;
+      padding: 5px 12px;
+      color: #fff;
+      font-weight: bold;
+      background: $dark-blue;
+    }
+  }
+}
+
+.ranges-filter,
+.prices-filter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.legend {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+
+  &__item {
+    background: #e5f6fd;
+    color: #52c0f3;
+    border: 1px solid #e5f6fd;
+    padding: 3px 10px;
+    border-radius: 15px;
+
+    &--selected {
+      background: #fff;
+      border-color: #a2e1ff;
+      color: #000;
+    }
+  }
+}
