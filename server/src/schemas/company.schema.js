@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const CompanySchema = new mongoose.Schema({
     adsh: {
-        type: String,
-        required: true
+      type: String,
+      required: true
     },
     cik: {
       type: String
@@ -138,6 +138,4 @@ const CompanySchema = new mongoose.Schema({
     timestamps: true
 });
 
-const CompanyModel = mongoose.model('Company', CompanySchema);
-
-module.exports = CompanyModel;
+module.exports.CompanyModel = mongoose.model('Company', CompanySchema);

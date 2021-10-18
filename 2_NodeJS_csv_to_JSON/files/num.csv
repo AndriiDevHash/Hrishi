@@ -1,4 +1,4 @@
-adsh,tag,version,coreg,ddate,qtrs,uom,value,footnote
-0001640334-21-000798,AccountsPayableAndAccruedLiabilitiesCurrent,us-gaap/2019,,20210131,0,USD,10010,
-0001640334-21-000798,AccountsPayableAndAccruedLiabilitiesCurrent,us-gaap/2019,,20201031,0,USD,10913,
-0001477932-21-002126,AccountsPayableAndAccruedLiabilitiesCurrent,us-gaap/2019,,20201231,0,USD,2372072,
+adsh,tag,version,coreg,ddate,qtrs,uom,value,footnote,name
+0001640334-21-000799,AccountsPayableAndAccruedLiabilitiesCurrent,us-gaap/2019,,20210131,0,USD,10010,,Google
+0001640334-21-000798,AccountsPayableAndAccruedLiabilitiesCurrent,us-gaap/2019,,20201031,0,USD,10913,,Apple
+0001477932-21-002126,AccountsPayableAndAccruedLiabilitiesCurrent,us-gaap/2019,,20201231,0,USD,2372072,,Netflix
