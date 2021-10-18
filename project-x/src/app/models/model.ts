@@ -33,9 +33,14 @@ export type Company = {
   lShort: number;
   bookValue: number;
   currentShort: number;
+  adsh: string;
 }
 
 export type Option = {
   value: string,
   selected: boolean;
+}
+
+export type ApiConfig = {
+  URI: string
 }

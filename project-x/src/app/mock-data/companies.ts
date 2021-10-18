@@ -26,6 +26,7 @@ export const companies: Company[] = [
     lShort: 0.5,
     bookValue: 4.2,
     currentShort: 0.73,
+    adsh: '123'
   },
   {
     longName: 'Tesla.com, Inc',
@@ -52,6 +53,7 @@ export const companies: Company[] = [
     lShort: 0.5,
     bookValue: 4.2,
     currentShort: 0.73,
+    adsh: '124'
   },
   {
     longName: 'Google.com, Inc',
@@ -78,6 +80,7 @@ export const companies: Company[] = [
     lShort: 0.5,
     bookValue: 4.2,
     currentShort: 0.73,
+    adsh: '125'
   },
   {
     longName: 'Netflix.com, Inc',
@@ -104,6 +107,7 @@ export const companies: Company[] = [
     lShort: 0.5,
     bookValue: 4.2,
     currentShort: 0.73,
+    adsh: '126'
   },
   {
     longName: 'Bmw.com, Inc',
@@ -130,5 +134,6 @@ export const companies: Company[] = [
     lShort: 0.5,
     bookValue: 4.2,
     currentShort: 0.73,
+    adsh: '127'
   }
 ];

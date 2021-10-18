@@ -6,12 +6,25 @@
   margin-right: 20px;
 }
 
+.ng-select.search__input::ng-deep {
+  .ng-select-container {
+    border: none;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .ng-arrow-wrapper {
+    display: none;
+  }
+}
+
 .search {
   border: 1px solid $gray;
   border-radius: 10px;
   padding: 0 5px;
   display: flex;
   align-items: center;
+  height: 30px;
 
   &__icon {
     width: 12px;
@@ -26,6 +39,8 @@
     background-color: transparent;
     padding: 0;
     text-align: center;
+    height: 100%;
+    min-width: 150px;
   }
 
   &__input::placeholder {
