@@ -1,0 +1,38 @@
+<ul class="list widget--aside">
+  <li class="list__item">
+    <i class="bi bi-briefcase"></i>
+    <span class="list__label">Sales</span>
+  </li>
+  <li class="list__item">
+    <i class="bi bi-arrow-90deg-left"></i>
+    <span class="list__label">Returns</span>
+  </li>
+  <li class="list__item">
+    <i class="bi bi-cash"></i>
+    <span class="list__label">Payments</span>
+  </li>
+  <li class="list__item">
+    <i class="bi bi-file-earmark"></i>
+    <span class="list__label">Reports</span>
+  </li>
+</ul>
+
+<div class="mt-4">
+  <div class="filters-container">
+    <app-filters></app-filters>
+  </div>
+  <div class="widget-container">
+    <div class="widget widget__item" *ngFor="let item of data">
+      <div class="widget__text-content">
+        <span class="widget__label">{{ item.label }}</span>
+        <span class="widget__value">{{ item.value }}</span>
+      </div>
+      <div class="widget__fotter">
+        <div class="widget__button-container">
+          <button class="widget__button">See</button>
+          <i class="bi bi-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

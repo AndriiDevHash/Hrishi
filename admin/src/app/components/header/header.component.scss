@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+
+:host {
+  display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  height: 55px;
+  padding: 0 25px;
+
+  &__logo {
+    color: $pink;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 40px;
+    font-size: 32px;
+  }
+}

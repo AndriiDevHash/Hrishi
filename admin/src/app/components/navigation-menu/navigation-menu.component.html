@@ -1,0 +1,16 @@
+<nav class="navigation">
+  <div *ngFor="let option of options" class="navigation__option">
+    <span
+      [ngStyle]="option.styles"
+    >
+      {{ option.label }}
+    </span>
+
+    <ul *ngIf="option.subOptions" class="navigation__sub-options list">
+      <li *ngFor="let subOption of option.subOptions" class="navigation__option">
+        {{ subOption.label }}
+      </li>
+    </ul>
+  </div>
+</nav>
+

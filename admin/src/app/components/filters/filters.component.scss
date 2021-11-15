@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+:host {
+  display: block;
+}
+
+.filters {
+  display: flex;
+  margin-left: auto;
+}
+
+.filter {
+  &__item {
+    padding: 10px;
+    color: $gray;
+    background: #fff;
+    border-color: $gray;
+
+    &--active {
+      background: $main-purpule;
+      color: #fff;
+      border: none;
+    }
+  }
+}
+
+.marketplace-filters {
+  .dropdown-toggle::after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  &__button {
+    min-width: 150px;
+    text-align: start;
+    position: relative;
+  }
+}
