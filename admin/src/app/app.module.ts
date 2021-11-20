@@ -7,6 +7,10 @@ import { NavigationMenuComponent } from './components/navigation-menu/navigation
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FiltersComponent } from './components/filters/filters.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { SubscriptionComponent } from './components/subscription/subscription.component';
+import { SubscriptionStatusPipe } from './pipes/subscription-status/subscription-status.pipe';
+import { SideNavigationComponent } from './side-navigation/side-navigation.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { FiltersComponent } from './components/filters/filters.component';
     NavigationMenuComponent,
     DashboardComponent,
     HeaderComponent,
-    FiltersComponent
+    FiltersComponent,
+    UserProfileComponent,
+    SubscriptionComponent,
+    SubscriptionStatusPipe,
+    SideNavigationComponent,
   ],
   imports: [
     BrowserModule,

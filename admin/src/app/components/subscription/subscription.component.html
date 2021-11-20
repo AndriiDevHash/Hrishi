@@ -1,0 +1,55 @@
+<app-side-navigation></app-side-navigation>
+
+<section class="channel-section mt-4">
+  <h3 class="mb-3">E-commerce Channel Subscription</h3>
+  <table class="table table-warning table-bordered">
+    <tbody>
+      <tr
+        *ngFor="let channel of user.channelSubscriptions"
+        class="table__row"
+      >
+        <td class="table__cell">{{ channel.label }}</td>
+        <td class="table__cell">
+          <button type="button" class="btn btn-success">
+            Authorize
+          </button>
+        </td>
+        <td class="table__cell">
+          {{ channel.selected | subscriptionStatus }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="subscription-terms">
+  <h5 class="subscription-terms__header text-center p-2 m-0">
+    Subscription Terms
+  </h5>
+  <div class="p-3">
+    <div class="subscription-terms__item">
+      <span>Plan - {{ user.plan }}</span>
+    </div>
+    <div class="subscription-terms__item">
+      <div class="subscription-terms__label">Description</div>
+      <div class="ms-3">{{ user.description }}</div>
+    </div>
+    <div class="subscription-terms__item">
+      <div class="subscription-terms__label">Invoice id</div>
+      <div class="ms-3">{{ user.invoiceId }}</div>
+    </div>
+    <div class="subscription-terms__item">
+      <div class="subscription-terms__label">Invoice date</div>
+      <div class="ms-3">{{ user.invoiceDate }}</div>
+    </div>
+    <div class="subscription-terms__item">
+      <div class="subscription-terms__label">Amount</div>
+      <div class="ms-3">{{ user.amount }}</div>
+    </div>
+    <div class="subscription-terms__item">
+      <div class="subscription-terms__label">Status</div>
+      <div class="ms-3">{{ user.status }}</div>
+    </div>
+    <button type="button" class="btn btn-success mt-3">Renew</button>
+  </div>
+</section>

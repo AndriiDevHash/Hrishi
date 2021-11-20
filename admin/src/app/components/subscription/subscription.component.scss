@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+:host {
+  display: grid;
+  grid-row: 1;
+  grid-template-columns: 300px 1fr 300px;
+  gap: 50px;
+}
+
+.list--placeholder {
+  height: 100vh;
+  padding: 20px 15px;
+  background: #fff;
+  box-shadow: 1px 0px 6px -1px rgba(0,0,0,0.2);
+}
+
+.table {
+  &__cell {
+    vertical-align: middle;
+
+    &:not(:first-child) {
+      text-align: center;
+    }
+
+    &:first-child {
+      font-weight: bold;
+    }
+  }
+}
+
+.subscription-terms {
+  height: 100vh;
+  background: #fff;
+  box-shadow: -1px 0px 6px -1px rgba(0,0,0,0.2);
+
+  &__header {
+    border-bottom: 1px solid $gray;
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+}

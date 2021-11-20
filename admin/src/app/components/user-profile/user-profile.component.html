@@ -1,0 +1,99 @@
+<app-side-navigation></app-side-navigation>
+
+<section class="user-profile mt-4">
+  <h3 class="user-profile__title mb-3">User Profile</h3>
+  <div class="user-profile__body">
+    <div class="mb-3 user-profile__item">
+      <label for="organizationName" class="form-label me-3">Organization Name:</label>
+      <input
+        type="text"
+        class="form-control user-profile__input"
+        id="organizationName"
+        [value]="user.organization"
+      >
+    </div>
+    <div class="mb-3 user-profile__item">
+      <label for="pan" class="form-label me-3">PAN:</label>
+      <input
+        type="text"
+        class="form-control user-profile__input"
+        id="pan"
+        [value]="user.pan"
+      >
+    </div>
+    <div class="mb-3 user-profile__item">
+      <label for="gstn" class="form-label me-3">GSTN:</label>
+      <input
+        type="text"
+        class="form-control user-profile__input"
+        id="gstn"
+        [value]="user.gstn"
+      >
+    </div>
+    <div class="mb-3 user-profile__item">
+      <label for="address" class="form-label me-3">Address:</label>
+      <input
+        type="text"
+        class="form-control user-profile__input"
+        id="address"
+        [value]="user.address"
+      >
+    </div>
+    <div class="mb-3 user-profile__item">
+      <label for="state" class="form-label me-3">State:</label>
+      <input
+        type="text"
+        class="form-control user-profile__input"
+        id="state"
+        [value]="user.state"
+      >
+    </div>
+    <div class="mb-3 user-profile__item">
+      <label for="mobileNumber" class="form-label me-3">Mobile No.:</label>
+      <input
+        type="number"
+        class="form-control user-profile__input"
+        id="mobileNumber"
+        [value]="user.mobileNumber"
+      >
+    </div>
+    <div class="mb-3 user-profile__item">
+      <label for="email" class="form-label me-3">Email Id:</label>
+      <input
+        type="email"
+        class="form-control user-profile__input"
+        id="email"
+        [value]="user.email"
+      >
+    </div>
+  </div>
+  <div class="user-profile__footer">
+    <button type="button" class="btn btn-success mt-3">Update</button>
+  </div>
+</section>
+
+<section class="user-settings">
+  <div class="user-settings__header">
+    <div class="user-settings__logo">
+      Logo
+    </div>
+  </div>
+  <div class="user-settings__body">
+    <h5>Change password</h5>
+    <div class="mb-3">
+      <label for="currentPassword" class="form-label">Current Password</label>
+      <input type="password" class="form-control" id="currentPassword">
+    </div>
+    <div class="mb-3">
+      <label for="newPassword" class="form-label">New Password</label>
+      <input type="password" class="form-control" id="newPassword">
+    </div>
+    <div class="mb-3">
+      <label for="reEnterPassword" class="form-label">Reenter Password</label>
+      <input type="password" class="form-control" id="reEnterPassword">
+    </div>
+  </div>
+  <div class="user-settings__footer">
+    <button type="button" class="btn btn-success mt-3 ms-3">Change</button>
+  </div>
+</section>
