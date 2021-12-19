@@ -2,8 +2,7 @@ const mongoose = require('mongoose');
 
 const CompanySchema = new mongoose.Schema({
     adsh: {
-        type: String,
-        required: true
+      type: String,
     },
     cik: {
       type: String
