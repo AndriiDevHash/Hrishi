@@ -8,7 +8,7 @@ import { companies } from '../../mock-data/companies';
   styleUrls: ['./company-comperation-carousel.component.scss']
 })
 export class CompanyComperationCarouselComponent implements OnInit {
-  companies = companies.slice(0, 4);
+  companies = companies.slice(0, 3);
   rateStyle = {
     'background-color': 'transparent',
     'font-weight': 'bold'
